@@ -1,0 +1,119 @@
+/* Reset e fontes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+.header {
+    background: #2c6e49;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.nav-links a:hover, .nav-links .active {
+    background: #1f4f34;
+}
+
+/* Conteúdo principal */
+.main-content {
+    padding: 2rem 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* Cartões */
+.card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-top: 1rem;
+}
+
+/* Formulário */
+form label {
+    display: block;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+form input, form button {
+    width: 100%;
+    padding: .7rem;
+    margin-top: .5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background: #2c6e49;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+form button:hover {
+    background: #1f4f34;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 0.8rem;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Rodapé */
+.footer {
+    text-align: center;
+    background: #2c6e49;
+    color: #fff;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
