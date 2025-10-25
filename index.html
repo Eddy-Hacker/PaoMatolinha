@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pão Matolinha - Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i class="fas fa-bread-slice"></i>
+                    </div>
+                    <div class="logo-text">
+                        <span class="logo-main">Pão Matolinha</span>
+                        <span class="logo-sub">Transporte & Logística D'Vici Benzas</span>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <span id="current-date" class="current-date"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content container">
+        <!-- Resumo do Dia -->
+        <section class="dashboard-section">
+            <h2 class="section-title">
+                <i class="fas fa-chart-line"></i>
+                Resumo do Dia
+            </h2>
+            <div class="stats-grid">
+                <div class="stat-card income">
+                    <div class="stat-icon">
+                        <i class="fas fa-money-bill-wave"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Total Vendido</span>
+                        <span class="stat-value" id="total-vendas">0 MZN</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card sales">
+                    <div class="stat-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Vendas à Vista</span>
+                        <span class="stat-value" id="vendas-vista">0 MZN</span>
+                    </div>
+                </div>
+                
+                <div class="stat-card credit">
+                    <div class="stat-icon">
+                        <i class="fas fa-hand-holding-usd"></i>
+                    </div>
+                    <div class="stat-info">
+                        <span class="stat-label">Empréstimos</span>
+                        <span class="stat-value" id="total-emprestimos">0 MZN</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ações Rápidas -->
+        <section class="dashboard-section">
+            <h2 class="section-title">
+                <i class="fas fa-bolt"></i>
+                Ações Rápidas
+            </h2>
+            <div class="actions-grid">
+                <a href="vendas.html" class="action-card">
+                    <div class="action-icon">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <span class="action-text">Nova Venda</span>
+                </a>
+                
+                <div class="action-card" onclick="enviarRelatorioWhatsapp()">
+                    <div class="action-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <span class="action-text">Enviar WhatsApp</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vendas Recentes -->
+        <section class="dashboard-section">
+            <div class="section-header">
+                <h2 class="section-title">
+                    <i class="fas fa-history"></i>
+                    Vendas de Hoje
+                </h2>
+                <a href="vendas.html" class="view-all">Ver Todas</a>
+            </div>
+            <div id="recent-sales" class="recent-sales">
+                <!-- Vendas serão carregadas via JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Menu de Navegação Inferior -->
+    <nav class="bottom-nav">
+        <a href="index.html" class="nav-item active">
+            <i class="fas fa-home"></i>
+            <span>Início</span>
+        </a>
+        <a href="vendas.html" class="nav-item">
+            <i class="fas fa-cash-register"></i>
+            <span>Vendas</span>
+        </a>
+    </nav>
+
+    <footer class="footer">
+        <p>Transporte & Logística D'Vici Benzas</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
